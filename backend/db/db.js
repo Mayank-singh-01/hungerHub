@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const mongoUrl ="mongodb://localhost:27017/yourDatabaseName";
+const mongoUrl = process.env.MONGODB_URI || "mongodb://localhost:27017/yourDatabaseName";
 
 const mongoDB = async () => {
   try {

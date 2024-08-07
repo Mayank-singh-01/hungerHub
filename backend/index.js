@@ -1,23 +1,24 @@
 const express = require("express");
-const dotenv = require("dotenv")
-const connectMongoDB = require("./db/db.js"); 
+const dotenv = require("dotenv");
+const cors = require("cors");
+const connectMongoDB = require("./db/db.js");
 
 dotenv.config({
   path: "./.env",
 });
 
-
 const app = express();
-const port = process.env.PORT || 5002;
+const port = process.env.PORT || 8000;
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+// CORS configuration
+const corsOptions = {
+  origin: process.env.CORSE_ORIGIN, 
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept",
+  credentials: true, // Allow credentials
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
@@ -27,7 +28,7 @@ connectMongoDB()
     // Routes
     app.use("/api", require("./routes/creatUser.js"));
     app.use("/api", require("./routes/displayData.js"));
-    app.use("/api", require("./routes/orderRouter.js")); // Add this line
+    app.use("/api", require("./routes/orderRouter.js"));
 
     app.get("/", (req, res) => {
       res.send("Hello, Mayank this side");
