@@ -15,4 +15,8 @@ router.post("/foodData", (req, res) => {
   }
 });
 
+// router.get("/fooddata",(req,res)=>{
+//   res.send(`hay mayank this side`)
+// })
+
 module.exports = router;
