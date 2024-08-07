@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+import { CartProvider } from "./Components/ContextReducer/ContextReducer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    
-    </>
-  )
+    <CartProvider>
+      <Header />
+      <Outlet />
+      <Footer />
+    </CartProvider>
+  );
 }
 
-export default App
+export default App;
