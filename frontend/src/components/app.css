@@ -1,0 +1,14 @@
+.select-style {
+   outline: none;
+   cursor: pointer;
+   border: 2px solid #38b2ac;
+   padding: 0.25rem 0.9rem;
+   border-radius: 0.5rem;
+   display: block;
+   appearance: none;
+}
+
+.select-style:focus {
+   border-color: #38b2ac;
+   /* teal-500 */
+}
