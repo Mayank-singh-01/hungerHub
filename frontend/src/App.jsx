@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import { CartProvider } from "./Components/ContextReducer/ContextReducer";
+import Footer from "./home/footer.jsx";
+import Header from "./home/header.jsx";
+import { CartProvider } from "./components/contextReducer.jsx";
 
 function App() {
   return (

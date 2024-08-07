@@ -5,7 +5,7 @@ const MyOrder = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      const response = await fetch("http://localhost:5002/api/orders");
+      const response = await fetch("http://localhost:8000/api/orders");
       const data = await response.json();
       setOrders(data);
     };

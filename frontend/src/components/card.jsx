@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faOpencart } from "@fortawesome/free-brands-svg-icons";
 import "./app.css";
-import { useDispatchCart, useCart } from "../ContextReducer/ContextReducer.jsx";
+import { useDispatchCart, useCart } from "./contextReducer.jsx";
 
 const Card = ({ foodItem, options }) => {
   const data = useCart();

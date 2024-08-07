@@ -15,7 +15,7 @@ export default function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:5002/api/createuser", {
+      const response = await fetch("http://localhost:8000/api/createuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

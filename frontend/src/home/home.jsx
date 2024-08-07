@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Card from "../Card/Card.jsx";
-import Carousel from "../Carousel/Carousel.jsx";
+import Card from "../components/card.jsx";
+import Carousel from "../components/crousel.jsx";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -8,7 +8,7 @@ export default function Home() {
   const [foodItem, setFoodItem] = useState([]);
 
   const loadData = () => {
-    fetch("http://localhost:5002/api/foodData", {
+    fetch("http://localhost:8000/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,10 +37,11 @@ export default function Home() {
     <div>
       <Carousel
         images={[
-          "../image/pizza3.jpg",
-          "../image/burgar0.jpg",
-          "../image/momos.avif",
-          "../image/pastanew.jpg",
+          "../src/image/burgar0.jpg",
+          "../src/image/pizza3.jpg",
+          "../src/image/burgar0.jpg",
+          "../src/image/momos.avif",
+          "../src/image/pastanew.jpg",
         ]}
         setSearchTerm={setSearchTerm}
       />

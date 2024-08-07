@@ -8,11 +8,11 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Home from "./Components/Home/Home";
-import MyOrder from "./Components/MyOrder/MyOrder";
-import Signup from "./Components/Screen/Signup";
-import Login from "./Components/Screen/Lgin";
-import MyCart from "./Components/Screen/MyCart";
+import Home from "./home/home.jsx";
+import MyOrder from "./screen/myOrder.jsx";
+import Signup from "./screen/signUp.jsx";
+import Login from "./screen/login.jsx";
+import MyCart from "./screen/myCart.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

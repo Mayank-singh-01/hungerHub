@@ -1,5 +1,5 @@
 import React from "react";
-import { useCart, useDispatchCart } from "../ContextReducer/ContextReducer";
+import { useCart, useDispatchCart } from "../components/contextReducer.jsx";
 import "./app.css";
 
 const MyCart = () => {
@@ -22,7 +22,7 @@ const MyCart = () => {
       (total, item) => total + item.price * item.qty,
       0
     );
-    const response = await fetch("http://localhost:5002/api/checkout", {
+    const response = await fetch("http://localhost:8000/api/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
