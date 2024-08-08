@@ -42,7 +42,7 @@ function Footer() {
           />
         </a>
         <a
-          href="https://www.instagram.com/mayank_singh__18/"
+          href="https://www.instagram.com/mayank1._8/"
           target="_blank"
           rel="noopener noreferrer"
         >
