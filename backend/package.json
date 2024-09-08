@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon -r dotenv/config index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",

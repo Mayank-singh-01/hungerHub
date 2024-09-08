@@ -1,15 +1,14 @@
 const mongoose = require("mongoose");
 
 const mongoUrl =
-  process.env.MONGODB_URI || "mongodb://localhost:27017/yourDatabaseName";
+  process.env.MONGODB_URI ||
+  "mongodb+srv://mayank23378:9507769566@cluster0.vbtka.mongodb.net/";
 
 const mongoDB = async () => {
   try {
     // Connecting to MongoDB (no need for useNewUrlParser and useUnifiedTopology)
-    await mongoose.connect(mongoUrl);
-    // , {
-    //   dbName: "yourDatabaseName", // If needed, specify the database name explicitly
-    // }
+    await mongoose.connect(mongoUrl, { dbName: "yourDatabaseName" });
+    
     console.log("MongoDB connected successfully");
 
     const db = mongoose.connection.db;
