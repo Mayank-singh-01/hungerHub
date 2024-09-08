@@ -9,7 +9,7 @@ const port = process.env.PORT || 8000;
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.CORSE_ORIGIN, 
+  origin: "*", 
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept",
   credentials: true, // Allow credentials
