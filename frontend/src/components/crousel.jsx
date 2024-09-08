@@ -38,20 +38,20 @@ const Carousel = ({ images, setSearchTerm }) => {
   };
 
   return (
-    <div className="relative w-screen mt-16 h-96">
-      <div className="absolute top-10 left-1/2 transform -translate-x-1/2 z-10 w-1/2 mt-8">
+    <div className="relative w-screen mt-16 h-[280px] sm:h-[460px] ">
+      <div className="absolute sm:w-[50%] left-1/2 transform -translate-x-1/2 z-10 top-12 sm:top-24">
         <form onSubmit={handleSearchSubmit} className="flex items-center">
           <input
             type="text"
             placeholder="Search..."
             value={searchTerm}
             onChange={handleSearchChange}
-            className="flex-grow p-2 text-gray-700 bg-white border border-gray-300 rounded-l-full focus:outline-none focus:border-gray-500"
+            className="flex-grow p-2 text-gray-700 bg-white border rounded-l-full focus:outline-none"
             aria-label="Search"
           />
           <button
             type="submit"
-            className="py-2 px-4 bg-teal-500 text-white rounded-r-full hover:bg-teal-700 focus:outline-none"
+            className="py-2 px-3 sm:px-5 bg-teal-500 text-white rounded-r-full hover:bg-teal-700 focus:outline-none"
             aria-label="Submit search"
           >
             <FontAwesomeIcon

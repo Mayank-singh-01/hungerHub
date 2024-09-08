@@ -34,7 +34,7 @@ export default function Home() {
   );
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Carousel
         images={[
           "https://c4.wallpaperflare.com/wallpaper/557/8/980/food-pasta-basil-olives-wallpaper-preview.jpg",
