@@ -7,6 +7,11 @@
    justify-content: center;
    align-items: center;
 }
+@media (max-width: 768px){
+   .background-image{
+      height: 90vh;
+   }
+}
 
 .background-image2 {
    background-image: url("../image/pizza3.jpg");
@@ -24,6 +29,16 @@
    border-radius: 0.5rem;
    outline: none;
    width: 50vw;
+}
+@media (max-width: 768px) {
+
+   /* For small screens */
+   .input-field {
+      width: 70vw;
+      /* Set width to 80% */
+      font-size: 0.875rem;
+      /* Decrease text size */
+   }
 }
 
 .input-field:focus {

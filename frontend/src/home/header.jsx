@@ -25,7 +25,7 @@ function Header() {
   };
 
   return (
-    <nav className="bg-teal-400 font-bold text-xl text-white z-50 p-4 fixed top-0 w-full">
+    <nav className="bg-teal-400 font-bold text-xl text-white z-50 p-3 fixed top-0 w-full">
       <div className="flex justify-between items-center">
         <div className="block sm:hidden">
           <span className="font-serif pl-4 text-2xl text-red-600">H</span>unger
