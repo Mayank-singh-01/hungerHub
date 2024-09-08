@@ -22,13 +22,16 @@ const MyCart = () => {
       (total, item) => total + item.price * item.qty,
       0
     );
-    const response = await fetch("http://localhost:8000/api/checkout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ items, totalAmount }),
-    });
+    const response = await fetch(
+      "https://hungerhub-backend-f5g8.onrender.com/api/checkout",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ items, totalAmount }),
+      }
+    );
 
     if (response.ok) {
       alert("Order placed successfully");

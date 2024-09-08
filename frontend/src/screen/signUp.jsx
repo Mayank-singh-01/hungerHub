@@ -15,18 +15,21 @@ export default function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/createuser", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: credentials.name,
-          email: credentials.email,
-          password: credentials.password,
-          location: credentials.geolocation,
-        }),
-      });
+      const response = await fetch(
+        "https://hungerhub-backend-f5g8.onrender.com/api/createuser",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: credentials.name,
+            email: credentials.email,
+            password: credentials.password,
+            location: credentials.geolocation,
+          }),
+        }
+      );
 
       const json = await response.json();
       alert(json.message);

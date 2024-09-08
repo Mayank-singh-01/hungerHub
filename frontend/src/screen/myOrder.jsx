@@ -5,7 +5,9 @@ const MyOrder = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      const response = await fetch("http://localhost:8000/api/orders");
+      const response = await fetch(
+        "https://hungerhub-backend-f5g8.onrender.com/api/orders"
+      );
       const data = await response.json();
       setOrders(data);
     };

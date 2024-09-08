@@ -8,7 +8,7 @@ export default function Home() {
   const [foodItem, setFoodItem] = useState([]);
 
   const loadData = () => {
-    fetch("http://localhost:8000/api/foodData", {
+    fetch("https://hungerhub-backend-f5g8.onrender.com/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
