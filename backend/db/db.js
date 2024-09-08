@@ -6,7 +6,6 @@ const mongoUrl =
 
 const mongoDB = async () => {
   try {
-    // Connecting to MongoDB (no need for useNewUrlParser and useUnifiedTopology)
     await mongoose.connect(mongoUrl, { dbName: "yourDatabaseName" });
     
     console.log("MongoDB connected successfully");
