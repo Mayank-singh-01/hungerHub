@@ -39,24 +39,24 @@ const Carousel = ({ images, setSearchTerm }) => {
 
   return (
     <div className="relative w-screen mt-16 h-[280px] sm:h-[460px] ">
-      <div className="absolute sm:w-[50%] left-1/2 transform -translate-x-1/2 z-10 top-12 sm:top-24">
+      <div className="absolute sm:w-[45%] left-1/2 transform -translate-x-1/2 z-10 top-14 sm:top-28">
         <form onSubmit={handleSearchSubmit} className="flex items-center">
           <input
             type="text"
             placeholder="Search..."
             value={searchTerm}
             onChange={handleSearchChange}
-            className="flex-grow p-2 text-gray-700 bg-white border rounded-l-full focus:outline-none"
+            className="flex-grow p-1 sm:p-2 text-gray-700 bg-slate-50 border rounded-l-full outline-none border-none focus:outline-none"
             aria-label="Search"
           />
           <button
             type="submit"
-            className="py-2 px-3 sm:px-5 bg-teal-500 text-white rounded-r-full hover:bg-teal-700 focus:outline-none"
+            className="py-1 sm:py-2 px-2 sm:px-3 bg-slate-50 text-slate-700 rounded-r-full outline-none border-none focus:outline-none"
             aria-label="Submit search"
           >
             <FontAwesomeIcon
               icon={faSearchengin}
-              style={{ width: "22px", height: "22px" }}
+              style={{ width: "15px", height: "15px" }}
             />
           </button>
         </form>
@@ -79,7 +79,7 @@ const Carousel = ({ images, setSearchTerm }) => {
         ))}
       </div>
 
-      <button
+      {/* <button
         onClick={handlePrevClick}
         className="absolute top-1/2 left-10 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full"
         aria-label="Previous slide"
@@ -93,7 +93,7 @@ const Carousel = ({ images, setSearchTerm }) => {
         aria-label="Next slide"
       >
         &#10095;
-      </button>
+      </button> */}
     </div>
   );
 };
