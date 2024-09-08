@@ -37,11 +37,11 @@ export default function Home() {
     <div>
       <Carousel
         images={[
-          "../src/image/burgar0.jpg",
-          "../src/image/pizza3.jpg",
-          "../src/image/burgar0.jpg",
-          "../src/image/momos.avif",
-          "../src/image/pastanew.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/557/8/980/food-pasta-basil-olives-wallpaper-preview.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/630/659/594/food-pasta-meal-still-life-tomato-hd-wallpaper-preview.jpg",
+          "https://media.istockphoto.com/id/1252605699/photo/veg-momos-on-black-slate-table-top-momos-is-the-popular-dish-of-indian-tibetan-chinese.jpg?s=612x612&w=0&k=20&c=-K4xCgsFxgv0OnSf9Omp8w06eoTE4_6b30pO12b6d9o=",
+          "https://t4.ftcdn.net/jpg/02/80/76/25/360_F_280762521_j1sQEgHTmtfoUcAEgoPt1gdBu6yinZQN.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/197/854/431/fire-burger-5k-steak-wallpaper-preview.jpg",
         ]}
         setSearchTerm={setSearchTerm}
       />
